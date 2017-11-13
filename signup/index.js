@@ -105,8 +105,13 @@ function signup(data) {
     )
         .then(function handleFeedResponse(response) {
             console.log(response);
+            window.localStorage.setItem('key', response.key);
             PAGE_DATA = response;
             console.log(PAGE_DATA);
+            window.location =
+                'file:///home/basecamp/Projects/Dailey_exercises/October/chirper-feed/index.html?user=' +
+                $('#username-input').val() +
+                '';
         })
         .catch(function handleFeedReason(reason) {
             console.log('Failure:', reason);
