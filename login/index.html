@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <link rel='stylesheet' href='./assets/style.css' />
+    <title>Login</title>
+</head>
+
+<body>
+    <div id="topbar" class="col-lg-12">
+        <div class=".dropdown">
+            <button id="login">Don't Have an account? Sign up!
+                <i class="fa fa-caret-down"></i>
+            </button>
+        </div>
+    </div>
+    <div class="dropdown-content" hidden>
+        <p id="drop"> New to Chirper?</p>
+        <p id="drop">Sign up now to get your own personalized timeline!</p>
+        <p id="drop">
+            <a href="../signup/index.html" class="signup-button">Sign up</a>
+        </p>
+        <ul id="login-error"></ul>
+    </div>
+    <center>
+        <div id="container">
+            <i id="bird2" class="fa fa-twitter" aria-hidden="true"></i>
+            <h1>Welcome back
+                <br> Log in</h1>
+            <div id="user-info">
+                <input id="username-input" type="text" autocomplete="off" value="" name="user[name]" maxlength="40" aria-required="true"
+                    placeholder="Username" class="">
+                <p id="username-error"></p>
+                <br>
+                <input id="password-input" type="password" autocomplete="off" value="" name="user[name]" maxlength="40" aria-required="true"
+                    placeholder="Password" class="">
+                <p id="password-errors"></p>
+                <a class="login-button">Login</a>
+            </div>
+        </div>
+    </center>
+
+
+    <script src="https://unpkg.com/jquery"></script>
+    <script src="index.js"></script>
+</body>
+
+</html
