@@ -17,13 +17,13 @@ const month = {
 //**************************** column1 *********************************/
 function userInformation() {
     var html =
-        '<h2><a id="name" href="https://www.twitter.com/' +
+        '<h2><a id="name" href="../user_homepage/index.html?user=' +
         PAGE_DATA.chirper.username +
         '">' +
         PAGE_DATA.chirper.name +
         '</a></h2>';
     html +=
-        '<h4><a id="username" href="https://www.twitter.com/' +
+        '<h4><a id="username" href="../user_homepage/index.html?user=' +
         PAGE_DATA.chirper.username +
         '">@' +
         PAGE_DATA.chirper.username +
@@ -47,28 +47,20 @@ function userInformation() {
         '</p>';
     return html;
 }
-function picture() {
-    return '<i id="img-circle"class="fa fa-user-circle" aria-hidden="true"></i>';
-}
-
 function showUserInformation() {
     var h = userInformation();
 
     $('#column1').html(h);
 }
-function showPic() {
-    var p = picture();
-    $('#header1').html(p);
-}
 
 //**************************** column2 *********************************/
 function chirpInformation(chirp) {
     var html =
-        '<a id="user" href="https://twitter.com/' +
+        '<a id="user" href="../user_homepage/index.html?user=' +
         PAGE_DATA.chirper.username +
         '">' +
         chirp.author.name +
-        '</a><a id="info" href="https://twitter.com/' +
+        '</a><a id="info" href="../user_homepage/index.html?user=' +
         PAGE_DATA.chirper.username +
         '"> @' +
         chirp.author.username +
@@ -217,7 +209,6 @@ function main(username) {
         .then(function handleFeedResponse(response) {
             PAGE_DATA = response;
             console.log(PAGE_DATA);
-            showPic();
             showUserInformation();
             showChirpInformation();
             showsignup();
