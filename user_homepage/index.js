@@ -1,7 +1,6 @@
 var PAGE_DATA = new Object();
 //*********************** change num to month ************************/
 const month = {
-    0: 'January',
     1: 'January',
     2: 'February',
     3: 'March',
