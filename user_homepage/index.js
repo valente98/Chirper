@@ -2,17 +2,18 @@ var PAGE_DATA = new Object();
 //*********************** change num to month ************************/
 const month = {
     0: 'January',
-    1: 'February',
-    2: 'March',
-    3: 'April',
-    4: 'May',
-    5: 'June',
-    6: 'July',
-    7: 'August',
-    8: 'September',
-    9: 'October',
-    10: 'November',
-    11: 'December'
+    1: 'January',
+    2: 'February',
+    3: 'March',
+    4: 'April',
+    5: 'May',
+    6: 'June',
+    7: 'July',
+    8: 'August',
+    9: 'September',
+    10: 'October',
+    11: 'November',
+    12: 'December'
 };
 //**************************** column1 *********************************/
 function userInformation() {
@@ -145,7 +146,7 @@ function search() {
                 PAGE_DATA = response;
                 console.log(PAGE_DATA);
                 window.location =
-                    'file:///home/basecamp/Projects/Dailey_exercises/October/chirper-feed/index.html?user=' +
+                    'file:///home/basecamp/Projects/Dailey_exercises/November/chirper-frontend/user_homepage/index.html?user=' +
                     $('#search').val() +
                     '';
             })
@@ -189,7 +190,7 @@ function addTweetInputInPAGEDATA() {
             username: PAGE_DATA.chirper.username
         },
         date: {
-            month: d.getMonth(),
+            month: d.getMonth() - 1,
             day: d.getDate(),
             year: d.getFullYear()
         },
