@@ -1,0 +1,76 @@
+body {
+    background-color: #e6ecf0;
+    font-family: sans-serif;
+}
+#drop {
+    margin-left: 5%;
+}
+#error {
+    font-size: 14px;
+    color: red;
+}
+#error2 {
+    font-size: 14px;
+    color: red;
+}
+#container {
+    margin-top: 4%;
+}
+#topbar {
+    left: 0;
+    background-color: #1da1f2;
+    width: 100%;
+    height: 50px;
+    padding: 0px;
+}
+#login {
+    margin-top: 1%;
+    margin-right: 7%;
+    float: left;
+    font-size: 14px;
+    color: black;
+    border: none;
+    background: none;
+    outline: none;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: fixed;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+.signup-button,
+.login-button {
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 100px;
+    color: white;
+    margin-top: 3%;
+    background-color: #1da1f2;
+    padding-left: 10vh;
+    padding-right: 10vh;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+#password-input,
+#username-input,
+#name-input,
+#email-input {
+    font-size: 18px;
+    width: 40vh;
+}
+h1 {
+    font-size: 8vh;
+    color: #1da1f2;
+}
+#bird2 {
+    font-size: 16vh;
+    color: #1da1f2;
+}
