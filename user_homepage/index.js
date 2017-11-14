@@ -158,7 +158,11 @@ function search() {
             });
     });
 }
-
+//***************************** Sign out ******************************/
+$('#signout').on('click', function() {
+    window.location =
+        'file:///home/basecamp/Projects/Dailey_exercises/November/chirper-frontend/login/index.html';
+});
 //***************************** Columntweet ***************************/
 function tweetButton() {
     var html =
