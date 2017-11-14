@@ -93,10 +93,10 @@ function showChirpInformation() {
     $('#column2').html(html);
 }
 function signup() {
-    var html = '<h5> New to Chirper?<h4>';
+    var html = '<h5> New to Chirper?</h5>';
     html += '<p id="sign">Sign up now to get your own personalized timeline!';
     html +=
-        '<br><br><br><a href="../../November/chirper-frontend/signup/index.html" class="signup-button">Sign up</a>';
+        '<br><br><br><a href="../signup/index.html" class="signup-button">Sign up</a>';
     return html;
 }
 function showsignup() {
