@@ -1,0 +1,281 @@
+#column1 {
+    float: left;
+    color: grey;
+    width: 20%;
+    height: 180px;
+}
+input[type='text'] {
+    width: 130px;
+    float: right;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 50px;
+    font-size: 16px;
+
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type='text']:focus {
+    width: 100%;
+}
+#img-circle {
+    font-size: 180px;
+    border-radius: 50%;
+    background-color: darkblue;
+    margin-top: -90px;
+    margin-left: 8%;
+    overflow: visible;
+    border-style: solid;
+    border-color: white;
+    border-width: 6px;
+}
+.img-circle2 {
+    border-radius: 50%;
+    overflow: visible;
+    border-style: solid;
+    border-color: white;
+    border-width: 6px;
+}
+#column2 {
+    float: left;
+    margin-top: 0.25%;
+    margin-left: 3%;
+    width: 50%;
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+#column3 {
+    float: right;
+    margin-left: 3%;
+    width: 24%;
+    background-color: #fff;
+    border: 1px solid white;
+    height: 155px;
+}
+#column4 {
+    float: left;
+    margin-top: 1%;
+    margin-left: 3%;
+    width: 24%;
+    background-color: #fff;
+    border: 1px solid white;
+    height: 450px;
+}
+
+#columntweet {
+    float: left;
+    margin-top: 1%;
+    margin-left: 3%;
+    width: 50%;
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+body {
+    background-color: #e6ecf0;
+}
+h1 {
+    margin-top: 17%;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #1da1f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgb(39, 190, 39);
+}
+#bird {
+    color: blue;
+}
+#name,
+h5,
+#description {
+    color: black;
+}
+#username {
+    color: grey;
+    font-size: 14px;
+}
+#sign {
+    margin-left: 5%;
+    color: grey;
+}
+h2 {
+    font-size: 21px;
+    font-weight: bolder;
+}
+h3 {
+    color: grey;
+    font-size: 14px;
+    font-weight: bolder;
+}
+h8 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #14171a;
+}
+h5 {
+    margin-left: 5%;
+    font-size: 21px;
+    color: black;
+    font-weight: bolder;
+    display: inline;
+}
+h6 {
+    margin-left: 5%;
+    font-size: 18px;
+    color: black;
+    font-weight: bolder;
+}
+h7 {
+    margin-left: 3%;
+    font-size: 18px;
+    color: #1da1f2;
+}
+p {
+    font-size: 14px;
+}
+#cancel {
+    font-size: 14px;
+    color: #1da1f2;
+    float: right;
+    margin-right: 11%;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+#header1 {
+    font-size: 18px;
+    /* position: top; */
+    left: 0;
+    background-color: white;
+    width: 100%;
+    height: 90px;
+    padding: 0px;
+    margin: 0px;
+}
+#header2 {
+    /* position: absolute; */
+    left: 0;
+    background-color: #1da1f2;
+    width: 100%;
+    height: 180px;
+    padding: 0px;
+    margin-top: 0;
+}
+
+.signup-button {
+    font-size: 21px;
+    font-weight: bold;
+    border-radius: 100px;
+    color: white;
+    margin-top: 3%;
+    background-color: #1da1f2;
+    padding-left: 10vh;
+    padding-right: 10vh;
+    padding-top: 11px;
+    padding-bottom: 11px;
+}
+#user {
+    color: black;
+    font-size: 14px;
+}
+#info {
+    color: grey;
+}
+#usernames {
+    margin-left: 3%;
+    margin-top: 3%;
+    float: left;
+}
+#tweetbutton,
+#popup {
+    margin-left: 4%;
+    font-size: 19px;
+    color: #1da1f2;
+    border: none;
+    background: none;
+    outline: none;
+}
+#names {
+    margin-left: 3%;
+    color: black;
+    font-weight: bolder;
+    margin-top: 3%;
+}
+#submit {
+    margin-bottom: 2%;
+    font-size: 14px;
+    color: #1da1f2;
+    border: none;
+    background: none;
+    outline: none;
+}
+#refreshFriends {
+    color: #1da1f2;
+    font-size: 12px;
+    border: none;
+    background: none;
+    outline: none;
+}
+#modalinfo {
+    font-size: 21px;
+    color: #66757f;
+    font-weight: bold;
+}
+#bird2 {
+    font-size: 32px;
+    color: #1da1f2;
+}
+
+nav {
+    background-color: white;
+}
+
+.navbar {
+    border-radius: 0;
+    margin: 0;
+}
+
+#search {
+    border-radius: 15px 0 0 15px;
+}
+
+#searchbutton {
+    border-radius: 0 15px 15px 0;
+}
+
+#search,
+#searchbutton {
+    height: 30px;
+    border-color: #ece6f0;
+    background-color: #f5f8fa;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.navbar-right {
+    padding: 10px;
+}
