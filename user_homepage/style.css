@@ -288,8 +288,9 @@ nav {
     background: none;
 }
 table {
-    margin-right: 26%;
+    margin-right: 22%;
 }
 td {
-    margin-left: 3%;
+    padding-left: 10px;
+    padding-right: 10px;
 }
