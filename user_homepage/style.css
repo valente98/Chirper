@@ -265,6 +265,7 @@ nav {
 
 #searchbutton {
     border-radius: 0 15px 15px 0;
+    margin-right: 3%;
 }
 
 #search,
@@ -278,4 +279,11 @@ nav {
 
 .navbar-right {
     padding: 10px;
+}
+#signout {
+    height: 30px;
+    color: #1da1f2;
+    border-style: none;
+    border-width: 1px;
+    background: none;
 }
