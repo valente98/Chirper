@@ -94,7 +94,7 @@ function login() {
                 PAGE_DATA = response;
                 var key = window.localStorage.setItem('key', PAGE_DATA.key);
                 window.location =
-                    'file:///home/basecamp/Projects/Dailey_exercises/October/chirper-feed/index.html?user=' +
+                    'file:///home/basecamp/Projects/Dailey_exercises/November/chirper-frontend/user_homepage/index.html?user=' +
                     $('#username-info2').val() +
                     '';
             })
