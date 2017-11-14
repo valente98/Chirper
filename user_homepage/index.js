@@ -1,6 +1,7 @@
 var PAGE_DATA = new Object();
 //*********************** change num to month ************************/
 const month = {
+    0: '',
     1: 'January',
     2: 'February',
     3: 'March',
@@ -137,7 +138,7 @@ function search() {
                 PAGE_DATA = response;
                 console.log(PAGE_DATA);
                 window.location =
-                    'file:///home/basecamp/Projects/Dailey_exercises/November/chirper-frontend/user_homepage/index.html?user=' +
+                    '../user_homepage/index.html?user=' +
                     $('#search').val() +
                     '';
             })
@@ -151,8 +152,7 @@ function search() {
 }
 //***************************** Sign out ******************************/
 $('#signout').on('click', function() {
-    window.location =
-        'file:///home/basecamp/Projects/Dailey_exercises/November/chirper-frontend/login/index.html';
+    window.location = '../login/index.html';
 });
 //***************************** Columntweet ***************************/
 function tweetButton() {
@@ -185,7 +185,7 @@ function addTweetInputInPAGEDATA() {
             username: PAGE_DATA.chirper.username
         },
         date: {
-            month: d.getMonth() - 1,
+            month: d.getMonth() + 1,
             day: d.getDate(),
             year: d.getFullYear()
         },
