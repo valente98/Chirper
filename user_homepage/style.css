@@ -28,8 +28,8 @@ input[type='text']:focus {
     font-size: 180px;
     border-radius: 50%;
     background-color: darkblue;
-    margin-top: -90px;
-    margin-left: 8%;
+    margin-top: -180px;
+    margin-left: 6%;
     overflow: visible;
     border-style: solid;
     border-color: white;
@@ -286,4 +286,10 @@ nav {
     border-style: none;
     border-width: 1px;
     background: none;
+}
+table {
+    margin-right: 26%;
+}
+td {
+    margin-left: 3%;
 }
