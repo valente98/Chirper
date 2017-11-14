@@ -81,6 +81,31 @@ function usernameErrorHtml(username) {
 $('#login').on('click', function() {
     $('.dropdown-content').toggle();
 });
+function login() {
+    $('.login-button').on('click', function() {
+        var info = $.post(
+            'https://bcca-chirper.herokuapp.com/api/login/',
+            JSON.stringify({
+                username: $('#username-info2').val(),
+                password: $('#password-info2').val()
+            })
+        )
+            .then(function handleFeedResponse(response) {
+                PAGE_DATA = response;
+                var key = window.localStorage.setItem('key', PAGE_DATA.key);
+                window.location =
+                    'file:///home/basecamp/Projects/Dailey_exercises/October/chirper-feed/index.html?user=' +
+                    $('#username-info2').val() +
+                    '';
+            })
+            .catch(function handleFeedReason(reason) {
+                console.log('Failure:', reason);
+                $('#login-error').html(
+                    '<li id="error" >Sorry incorrect username or password</li>'
+                );
+            });
+    });
+}
 
 //************************ signup ************************************/
 function getUserInformation() {
@@ -126,6 +151,7 @@ function main() {
     addPasswordValidation();
     addUsernameValidation();
     getUserInformation();
+    login();
 }
 
 $(main);
