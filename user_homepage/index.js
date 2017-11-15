@@ -84,50 +84,6 @@ function showChirpInformation() {
         .join('');
     $('#column2').html(html);
 }
-function signup() {
-    var html = '<h5> New to Chirper?</h5>';
-    html += '<p id="sign">Sign up now to get your own personalized timeline!';
-    html +=
-        '<br><br><br><a href="../signup/index.html" class="signup-button">Sign up</a>';
-    return html;
-}
-function showsignup() {
-    var html = signup();
-    $('#column3').html(html);
-}
-//****************************************** column 4 ***********************/
-// function youMayAlsoLIKE(suggest) {
-//     var html =
-//         '<div id="usernames"><img class="img-circle2" src="' +
-//         suggest.img_url +
-//         '" alt="Raymond Hettinger"height="60" width="60"></div><br><p id="names"><a id="user" href="https://twitter.com/' +
-//         suggest.username +
-//         '">' +
-//         suggest.name +
-//         '</p><p>@' +
-//         suggest.username +
-//         '</a></p>';
-
-//     return html;
-// }
-// function showyouMayAlsoLike() {
-//     var friendData = PAGE_DATA.suggestedFriends.slice();
-//     var data = new Array();
-//     while (data.length < 5) {
-//         var i = Math.floor(Math.random() * friendData.length);
-//         data.push(friendData[i]);
-//         friendData.splice(i, 1);
-//     }
-//     var html =
-//         '<h5> You may also like </h5><button id="refreshFriends"  onclick="showyouMayAlsoLike()" type="button">&bull; Refresh</button>';
-//     html += data
-//         .map(function(suggest) {
-//             return youMayAlsoLIKE(suggest);
-//         })
-//         .join('');
-//     $('#column4').html(html);
-// }
-//***************************** searchbar *****************************/
 function search() {
     $('#searchbutton').on('click', function() {
         $.post(
@@ -158,10 +114,6 @@ $('#signout').on('click', function() {
 function tweetButton() {
     var html =
         '<button id="tweetbutton" onclick="addTweetInput()">Chirp</button>';
-    html +=
-        '<button type="button" id="popup" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Chirps & replies</button>';
-    html +=
-        '<button type="button" id="popup" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Media</button>';
     return html;
 }
 
@@ -211,11 +163,8 @@ function main(username) {
             console.log(PAGE_DATA);
             showUserInformation();
             showChirpInformation();
-            showsignup();
             search();
-            // showyouMayAlsoLike();
             showAddTweetInput();
-            // showpopus();
         })
         .catch(function handleFeedReason(reason) {
             console.log('Failure:', reason);
