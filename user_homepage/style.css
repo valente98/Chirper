@@ -56,16 +56,12 @@ input[type='text']:focus {
     width: 24%;
     background-color: #fff;
     border: 1px solid white;
-    height: 155px;
 }
 #column4 {
     float: left;
     margin-top: 1%;
     margin-left: 3%;
     width: 24%;
-    background-color: #fff;
-    border: 1px solid white;
-    height: 450px;
 }
 
 #columntweet {
