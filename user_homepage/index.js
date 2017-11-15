@@ -114,6 +114,7 @@ $('#signout').on('click', function() {
 function tweetButton() {
     var html =
         '<button id="tweetbutton" onclick="addTweetInput()">Chirp</button>';
+
     return html;
 }
 
